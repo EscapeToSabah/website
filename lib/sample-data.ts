@@ -3,7 +3,7 @@ import { Experience, Story, Tip } from "./types";
 /**
  * This is demo content that ships with the project so the site runs
  * and looks right the moment you clone it -- before you've connected
- * your own Google Sheet. Once SHEET_ID is set in .env.local, every
+ * your own Google Sheet. Once NEXT_PUBLIC_SHEET_ID is set in .env.local, every
  * one of these is replaced by your sheet's rows. See README.md.
  */
 

@@ -9,7 +9,7 @@ import { sampleExperiences, sampleStories, sampleTips } from "./sample-data";
  * See README.md for the exact column layout each tab needs.
  */
 
-const SHEET_ID = process.env.SHEET_ID;
+const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
 const REVALIDATE_SECONDS = 300; // refresh content every 5 minutes
 
 function sheetUrl(tabName: string) {
