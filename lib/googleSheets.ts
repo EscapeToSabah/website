@@ -24,7 +24,7 @@ const auth = new google.auth.GoogleAuth({
 		private_key: privateKey,
 	},
 	scopes: [
-		"https://www.googleapis.com/auth/spreadsheets.readonly",
+		"https://www.googleapis.com/auth/spreadsheets",
 	],
 });
 
