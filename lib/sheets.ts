@@ -2,7 +2,7 @@ import { getSheetData } from "./googleSheets";
 import { Experience, Story, Tip } from "./types";
 import { sampleExperiences, sampleStories, sampleTips } from "./sample-data";
 
-const SHEET_ID = process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID;
+const SHEET_ID = process.env.GOOGLE_SHEET_ID;
 
 if (!SHEET_ID) {
 	throw new Error("Missing NEXT_PUBLIC_GOOGLE_SHEET_ID environment variable");
