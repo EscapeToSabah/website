@@ -10,8 +10,8 @@ export default async function StoriesSection() {
 	const latestStories = [...stories].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 10) as Story[];
 	return (
 		<section className="relative" data-section="stories">
-			<span className="absolute pointer-events-none top-0 left-0 bottom-0 m-auto bg-linear-to-r from-[#f4efe1] via-[#f4efe1] to-transparent w-[18%]  from-0% via-30% to-100% h-full z-30"></span>
-			<span className="absolute pointer-events-none top-0 right-0 bottom-0 m-auto bg-linear-to-l from-[#f4efe1] via-[#f4efe1] to-transparent w-[18%]  from-0% via-30% to-100% h-full z-30"></span>
+			{/* <span className="absolute pointer-events-none top-0 left-0 bottom-0 m-auto bg-linear-to-r from-[#f4efe1] via-[#f4efe1] to-transparent w-[18%]  from-0% via-30% to-100% h-full z-30"></span>
+			<span className="absolute pointer-events-none top-0 right-0 bottom-0 m-auto bg-linear-to-l from-[#f4efe1] via-[#f4efe1] to-transparent w-[18%]  from-0% via-30% to-100% h-full z-30"></span> */}
 			
 			{/* Inner Section */}
 			<div className="mx-auto max-w-7xl px-6 pt-24">
