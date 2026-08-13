@@ -24,9 +24,9 @@ export default async function TipsSection() {
           </div>
           <Link
             href="/tips"
-            className="hidden items-center gap-1 font-mono-data text-xs uppercase tracking-wide text-ink-soft transition-colors hover:text-canopy sm:flex"
+            className="group hidden items-center gap-1 font-mono-data text-xs uppercase tracking-wide text-ink-soft transition-colors hover:text-canopy sm:flex"
           >
-            All tips <ArrowRight size={13} />
+            All tips <ArrowRight className="group-hover:translate-x-1.5 duration-300" size={13} />
           </Link>
         </div>
 

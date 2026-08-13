@@ -17,9 +17,9 @@ export default async function ExperienceSection() {
 				</div>
 				<Link
 					href="/experiences"
-					className="hidden items-center gap-1 font-mono-data text-xs uppercase tracking-wide text-ink-soft transition-colors hover:text-canopy sm:flex"
+					className="group hidden items-center gap-1 font-mono-data text-xs uppercase tracking-wide text-ink-soft transition-colors hover:text-canopy sm:flex"
 				>
-					All experiences <ArrowRight size={13} />
+					All experiences <ArrowRight className="group-hover:translate-x-1.5 duration-300" size={13} />
 				</Link>
 			</div>
 

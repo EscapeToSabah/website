@@ -34,7 +34,8 @@ export default function StoriesSlider({ latestStories }: StoriesSliderProps) {
 		<Swiper
 			slidesPerView={2}
 			spaceBetween={30}
-			loop={true}
+			loop={false}
+			navigation={true}
 			modules={[Pagination, Navigation]}
 		>
 			{latestStories.map((story, index) => (

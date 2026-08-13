@@ -27,7 +27,7 @@ export default function Hero() {
 								Sabah, Borneo &middot; Malaysia
 							</span>
 							<h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
-								From a 4,095m
+								From a <span className="text-white underline decoration-amber decoration-4 underline-offset-4">4,095m</span>
 								<br />
 								summit to a <span className="text-white underline decoration-amber decoration-4 underline-offset-4">600m</span> reef
 								wall.
@@ -46,7 +46,7 @@ export default function Hero() {
 								</Link>
 								<Link
 									href="/stories"
-									className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 font-display text-sm font-medium text-white transition-colors hover:border-canopy hover:text-canopy"
+									className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 font-display text-sm font-medium text-white transition-colors hover:border-amber hover:text-amber"
 								>
 									Read the stories
 								</Link>

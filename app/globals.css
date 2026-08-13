@@ -1,134 +1,175 @@
 @import "tailwindcss";
 
 :root {
-  /* Canopy-to-reef palette: Sabah runs from a 4,095m granite summit
+	/* Canopy-to-reef palette: Sabah runs from a 4,095m granite summit
      through rainforest canopy down to reef walls hundreds of metres
      underwater. The palette follows that vertical journey. */
-  --color-canopy: #14301F;      /* deep rainforest, near-black but green */
-  --color-canopy-light: #2C5C3C;
-  --color-bark: #6B5335;        /* tree bark / rattan brown */
-  --color-amber: #E3A23C;       /* golden hour over the South China Sea */
-  --color-amber-light: #F4C671;
-  --color-ocean: #0E5566;       /* Sipadan teal-blue */
-  --color-reef: #4FBFAE;        /* shallow reef turquoise */
-  --color-paper: #F4EFE1;       /* sun-bleached rattan paper */
-  --color-paper-dim: #EAE2CC;
-  --color-ink: #16201A;         /* near-black, green-tinted text */
-  --color-ink-soft: #46564C;
+	--color-canopy: #14301f; /* deep rainforest, near-black but green */
+	--color-canopy-light: #2c5c3c;
+	--color-bark: #6b5335; /* tree bark / rattan brown */
+	--color-amber: #e3a23c; /* golden hour over the South China Sea */
+	--color-amber-light: #f4c671;
+	--color-ocean: #0e5566; /* Sipadan teal-blue */
+	--color-reef: #4fbfae; /* shallow reef turquoise */
+	--color-paper: #f4efe1; /* sun-bleached rattan paper */
+	--color-paper-dim: #eae2cc;
+	--color-ink: #16201a; /* near-black, green-tinted text */
+	--color-ink-soft: #46564c;
 
-  --background: var(--color-paper);
-  --foreground: var(--color-ink);
+	--background: var(--color-paper);
+	--foreground: var(--color-ink);
 }
 
 @theme inline {
-  --color-canopy: var(--color-canopy);
-  --color-canopy-light: var(--color-canopy-light);
-  --color-bark: var(--color-bark);
-  --color-amber: var(--color-amber);
-  --color-amber-light: var(--color-amber-light);
-  --color-ocean: var(--color-ocean);
-  --color-reef: var(--color-reef);
-  --color-paper: var(--color-paper);
-  --color-paper-dim: var(--color-paper-dim);
-  --color-ink: var(--color-ink);
-  --color-ink-soft: var(--color-ink-soft);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-display: var(--font-bricolage);
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains);
+	--color-canopy: var(--color-canopy);
+	--color-canopy-light: var(--color-canopy-light);
+	--color-bark: var(--color-bark);
+	--color-amber: var(--color-amber);
+	--color-amber-light: var(--color-amber-light);
+	--color-ocean: var(--color-ocean);
+	--color-reef: var(--color-reef);
+	--color-paper: var(--color-paper);
+	--color-paper-dim: var(--color-paper-dim);
+	--color-ink: var(--color-ink);
+	--color-ink-soft: var(--color-ink-soft);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-display: var(--font-bricolage);
+	--font-sans: var(--font-inter);
+	--font-mono: var(--font-jetbrains);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
 ::selection {
-  background: var(--color-amber);
-  color: var(--color-ink);
+	background: var(--color-amber);
+	color: var(--color-ink);
 }
 
 .font-display {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+	font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
 }
 
 .font-mono-data {
-  font-family: var(--font-mono), ui-monospace, monospace;
+	font-family: var(--font-mono), ui-monospace, monospace;
 }
 
 /* Long-form markdown content (stories, tips, experience write-ups) */
 .prose-sabah h2 {
-  font-family: var(--font-display), sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-canopy);
-  margin-top: 2.25rem;
-  margin-bottom: 0.75rem;
+	font-family: var(--font-display), sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--color-canopy);
+	margin-top: 2.25rem;
+	margin-bottom: 0.75rem;
 }
 .prose-sabah h3 {
-  font-family: var(--font-display), sans-serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--color-canopy);
-  margin-top: 1.75rem;
-  margin-bottom: 0.5rem;
+	font-family: var(--font-display), sans-serif;
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: var(--color-canopy);
+	margin-top: 1.75rem;
+	margin-bottom: 0.5rem;
 }
 .prose-sabah p {
-  margin-bottom: 1.1rem;
-  line-height: 1.75;
-  color: var(--color-ink-soft);
+	margin-bottom: 1.1rem;
+	line-height: 1.75;
+	color: var(--color-ink-soft);
 }
 .prose-sabah a {
-  color: var(--color-ocean);
-  text-decoration: underline;
-  text-decoration-color: var(--color-reef);
-  text-underline-offset: 3px;
+	color: var(--color-ocean);
+	text-decoration: underline;
+	text-decoration-color: var(--color-reef);
+	text-underline-offset: 3px;
 }
 .prose-sabah ul {
-  list-style: none;
-  margin-bottom: 1.1rem;
+	list-style: none;
+	margin-bottom: 1.1rem;
 }
 .prose-sabah ul li {
-  position: relative;
-  padding-left: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-ink-soft);
-  line-height: 1.6;
+	position: relative;
+	padding-left: 1.4rem;
+	margin-bottom: 0.5rem;
+	color: var(--color-ink-soft);
+	line-height: 1.6;
 }
 .prose-sabah ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55rem;
-  width: 6px;
-  height: 6px;
-  background: var(--color-amber);
-  border-radius: 1px;
-  transform: rotate(45deg);
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.55rem;
+	width: 6px;
+	height: 6px;
+	background: var(--color-amber);
+	border-radius: 1px;
+	transform: rotate(45deg);
 }
 .prose-sabah blockquote {
-  border-left: 3px solid var(--color-amber);
-  padding-left: 1.1rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-  color: var(--color-canopy-light);
+	border-left: 3px solid var(--color-amber);
+	padding-left: 1.1rem;
+	margin: 1.5rem 0;
+	font-style: italic;
+	color: var(--color-canopy-light);
 }
 .prose-sabah strong {
-  color: var(--color-ink);
-  font-weight: 600;
+	color: var(--color-ink);
+	font-weight: 600;
 }
 .prose-sabah img {
-  border-radius: 0.5rem;
-  margin: 1.5rem 0;
+	border-radius: 0.5rem;
+	margin: 1.5rem 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Swiper Slider */
+.swiper-horizontal {
+	overflow: visible !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: fit-content;
+	width: 50px;
+	aspect-ratio: 1;
+	transform: translateX(-100%);
+	z-index: 50;
+  border: 1px solid #14301f;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #14301f;
+}
+
+.swiper-button-next {
+  right: 0;
+	transform: translateX(100%);
+}
+
+.swiper-button-prev {
+	left: 0;
+	transform: translateX(-100%);
+  rotate: 180deg;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+	filter: brightness(100);
 }
