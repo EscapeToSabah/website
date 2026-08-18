@@ -36,10 +36,28 @@ export default function StoriesSlider({ latestStories }: StoriesSliderProps) {
 			spaceBetween={30}
 			loop={false}
 			navigation={true}
+			breakpoints={{
+				330: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				},
+				1240: {
+					slidesPerView: 3,
+					spaceBetween: 50,
+				},
+			}}
 			modules={[Pagination, Navigation]}
 		>
 			{latestStories.map((story, index) => (
-				<SwiperSlide key={story.slug + '-' + index}>
+				<SwiperSlide key={story.slug + "-" + index}>
 					<Link
 						href={`/stories/${story.slug}`}
 						className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white/40 transition-shadow hover:shadow-lg hover:shadow-ink/5"

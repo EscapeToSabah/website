@@ -14,7 +14,7 @@ export default async function StoriesSection() {
 			<span className="absolute pointer-events-none top-0 right-0 bottom-0 m-auto bg-linear-to-l from-[#f4efe1] via-[#f4efe1] to-transparent w-[18%]  from-0% via-30% to-100% h-full z-30"></span> */}
 			
 			{/* Inner Section */}
-			<div className="mx-auto max-w-7xl px-6 pt-24">
+			<div className="mx-auto max-w-7xl px-6 pt-24 max-sm:pb-20">
 				<div className="flex items-end justify-between mb-8">
 					<div>
 						<h2 className="mt-2 font-display text-2xl font-semibold text-ink sm:text-3xl">Stories</h2>

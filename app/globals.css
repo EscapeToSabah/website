@@ -39,11 +39,15 @@
 	--font-mono: var(--font-jetbrains);
 }
 
+html,
+body {
+	overflow-x: hidden;
+}
+
 body {
 	background: var(--background);
 	color: var(--foreground);
 	font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-	overflow-x: hidden;
 }
 
 ::selection {
@@ -150,27 +154,41 @@ body {
 	aspect-ratio: 1;
 	transform: translateX(-100%);
 	z-index: 50;
-  border: 1px solid #14301f;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: #14301f;
+	border: 1px solid #14301f;
+	border-radius: 999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: #14301f;
 }
 
 .swiper-button-next {
-  right: 0;
+	right: 0;
 	transform: translateX(100%);
 }
 
 .swiper-button-prev {
 	left: 0;
 	transform: translateX(-100%);
-  rotate: 180deg;
+	rotate: 180deg;
 }
 
 .swiper-button-next svg,
 .swiper-button-prev svg {
 	filter: brightness(100);
+}
+
+@media (max-width: 480px) {
+	.swiper-button-next {
+		transform: translate(-100%, 150%);
+		bottom: 0;
+		top: unset;
+	}
+
+	.swiper-button-prev {
+		transform: translate(100%, 150%) rotate(180deg);
+		bottom: 0;
+		top: unset;
+	}
 }
