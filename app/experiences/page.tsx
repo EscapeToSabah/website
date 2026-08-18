@@ -14,7 +14,7 @@ export default async function ExperiencesPage() {
   const byElevation = [...experiences].sort((a, b) => b.elevationM - a.elevationM);
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16">
+    <div className="mx-auto max-w-6xl px-6 pt-40 pb-16">
       <span className="font-mono-data text-xs uppercase tracking-[0.2em] text-ocean">
         Summit to reef
       </span>

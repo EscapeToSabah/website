@@ -11,8 +11,8 @@ const NAV = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <header className="fixed w-full top-0 left-0 right-0 max-auto z-40 border-b border-ink/10 bg-paper/90 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 max-[640px]:justify-center">
         <Link href="/" className="group flex items-center gap-2">
           <Image src={SiteLogo} alt="Site Logo" className="h-12 w-auto" />
         </Link>

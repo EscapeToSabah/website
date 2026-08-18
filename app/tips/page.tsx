@@ -14,7 +14,7 @@ export default async function TipsPage() {
   const categories = Array.from(new Set(tips.map((t) => t.category)));
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-16">
+    <div className="mx-auto max-w-4xl px-6 pt-40 pb-16">
       <span className="font-mono-data text-xs uppercase tracking-[0.2em] text-ocean">
         Before you go
       </span>

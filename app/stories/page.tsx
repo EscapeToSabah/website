@@ -13,7 +13,7 @@ export default async function StoriesPage() {
   const sorted = [...stories].sort((a, b) => (a.date < b.date ? 1 : -1));
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16">
+    <div className="mx-auto max-w-6xl px-6 pt-40 pb-16">
       <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
         Stories
       </h1>

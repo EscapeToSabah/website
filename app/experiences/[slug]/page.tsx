@@ -41,7 +41,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
 
 	return (
 		<>
-			<article className="mx-auto max-w-4xl px-6 py-16">
+			<article className="mx-auto max-w-4xl px-6 pt-40 pb-16">
 				<Link
 					href="/experiences"
 					className="inline-flex items-center gap-1.5 font-mono-data text-xs uppercase tracking-wide text-ink-soft hover:text-canopy"
