@@ -10,7 +10,7 @@ import { SHEET_CACHE_TAG } from "../../../lib/sheets";
  * GET /api/revalidate?secret=YOUR_SECRET
  *
  * Bookmark that URL for manual use, or wire it to a Google Apps Script
- * onEdit trigger on the sheet for fully automatic updates (see README).
+ * onEdit trigger on the sheet for fully automatic updates.
  */
 export async function GET(request: NextRequest) {
   const secret = request.nextUrl.searchParams.get("secret");
