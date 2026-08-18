@@ -13,7 +13,7 @@ if (!SHEET_ID) {
 // revalidateTag(SHEET_CACHE_TAG) there purges every tab cached below,
 // same as before, just now covering the googleapis call instead of fetch().
 export const SHEET_CACHE_TAG = "sheet-content";
-const REVALIDATE_SECONDS = 10; // safety-net refresh even if nobody pings /api/revalidate
+const REVALIDATE_SECONDS = 120; // safety-net refresh even if nobody pings /api/revalidate
 
 /**
  * Convert Google Sheets rows into objects using
